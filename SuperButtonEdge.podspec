@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SuperButtonEdge"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "buttontitle和图片位置以及间距."
 
   s.description  = <<-DESC
