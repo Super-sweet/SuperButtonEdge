@@ -17,6 +17,7 @@
 		022992201DCB1FDF00A8B062 /* SuperButtonEdgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0229921F1DCB1FDF00A8B062 /* SuperButtonEdgeUITests.m */; };
 		0229922F1DCB209700A8B062 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0229922E1DCB209700A8B062 /* UIButton+ImageTitleSpacing.m */; };
 		022992311DCB21B400A8B062 /* elivehome_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 022992301DCB21B400A8B062 /* elivehome_share.png */; };
+		82AEEF04F68642D41B81F78E /* libPods-SuperButtonEdge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC01983A4205B2C83B745C72 /* libPods-SuperButtonEdge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		0229922D1DCB209700A8B062 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
 		0229922E1DCB209700A8B062 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
 		022992301DCB21B400A8B062 /* elivehome_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elivehome_share.png; sourceTree = "<group>"; };
+		30A479D36A4DAA7201E6ACCF /* Pods-SuperButtonEdge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperButtonEdge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperButtonEdge/Pods-SuperButtonEdge.release.xcconfig"; sourceTree = "<group>"; };
+		8A3C0B3426F176152E3B55E3 /* Pods-SuperButtonEdge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperButtonEdge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperButtonEdge/Pods-SuperButtonEdge.debug.xcconfig"; sourceTree = "<group>"; };
+		BC01983A4205B2C83B745C72 /* libPods-SuperButtonEdge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperButtonEdge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82AEEF04F68642D41B81F78E /* libPods-SuperButtonEdge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,8 @@
 				022992131DCB1FDF00A8B062 /* SuperButtonEdgeTests */,
 				0229921E1DCB1FDF00A8B062 /* SuperButtonEdgeUITests */,
 				022991F81DCB1FDF00A8B062 /* Products */,
+				C59A7CC3F13422BB1E3A4EC4 /* Pods */,
+				AF5D6C8DB0F994A25534B52B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +155,23 @@
 			path = SuperButtonEdgeUITests;
 			sourceTree = "<group>";
 		};
+		AF5D6C8DB0F994A25534B52B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC01983A4205B2C83B745C72 /* libPods-SuperButtonEdge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C59A7CC3F13422BB1E3A4EC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A3C0B3426F176152E3B55E3 /* Pods-SuperButtonEdge.debug.xcconfig */,
+				30A479D36A4DAA7201E6ACCF /* Pods-SuperButtonEdge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 022992241DCB1FDF00A8B062 /* Build configuration list for PBXNativeTarget "SuperButtonEdge" */;
 			buildPhases = (
+				FE8ECCC1D2E20891CF58B498 /* [CP] Check Pods Manifest.lock */,
 				022991F31DCB1FDF00A8B062 /* Sources */,
 				022991F41DCB1FDF00A8B062 /* Frameworks */,
 				022991F51DCB1FDF00A8B062 /* Resources */,
+				E837FF6AF124C55597473921 /* [CP] Embed Pods Frameworks */,
+				D19FD840A46AA5B29B7F4DA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +303,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D19FD840A46AA5B29B7F4DA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperButtonEdge/Pods-SuperButtonEdge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E837FF6AF124C55597473921 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperButtonEdge/Pods-SuperButtonEdge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8ECCC1D2E20891CF58B498 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		022991F31DCB1FDF00A8B062 /* Sources */ = {
@@ -432,6 +507,7 @@
 		};
 		022992251DCB1FDF00A8B062 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3C0B3426F176152E3B55E3 /* Pods-SuperButtonEdge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SuperButtonEdge/Info.plist;
@@ -443,6 +519,7 @@
 		};
 		022992261DCB1FDF00A8B062 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A479D36A4DAA7201E6ACCF /* Pods-SuperButtonEdge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SuperButtonEdge/Info.plist;
@@ -517,6 +594,7 @@
 				022992261DCB1FDF00A8B062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		022992271DCB1FDF00A8B062 /* Build configuration list for PBXNativeTarget "SuperButtonEdgeTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +603,7 @@
 				022992291DCB1FDF00A8B062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0229922A1DCB1FDF00A8B062 /* Build configuration list for PBXNativeTarget "SuperButtonEdgeUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +612,7 @@
 				0229922C1DCB1FDF00A8B062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
