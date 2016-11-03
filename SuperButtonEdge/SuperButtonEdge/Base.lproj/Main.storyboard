@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axb-Ra-qxf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SQk-zP-xlS"/>
+                                    <constraint firstAttribute="width" constant="150" id="pBJ-XS-acF"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="elivehome_share.png">
+                                    <color key="titleColor" red="0.36014720797538757" green="0.91387331485748291" blue="0.28203690052032471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxd-3c-wfe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4R8-CB-8kH"/>
+                                    <constraint firstAttribute="height" constant="60" id="4ji-8v-gFo"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="elivehome_share.png">
+                                    <color key="titleColor" red="0.23379785967910688" green="0.9166332483291626" blue="0.4057155842959429" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2y-Q6-Dql">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Wlu-lO-VxM"/>
+                                    <constraint firstAttribute="width" constant="150" id="qXN-ti-JwM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="elivehome_share.png">
+                                    <color key="titleColor" red="0.30107833925181171" green="0.9166332483291626" blue="0.17343060781037212" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="axb-Ra-qxf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="125" id="6n0-9O-sJa"/>
+                            <constraint firstItem="X2y-Q6-Dql" firstAttribute="top" secondItem="rxd-3c-wfe" secondAttribute="bottom" constant="42" id="RSN-Ct-F3h"/>
+                            <constraint firstItem="X2y-Q6-Dql" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="gbx-FM-2UB"/>
+                            <constraint firstItem="rxd-3c-wfe" firstAttribute="top" secondItem="axb-Ra-qxf" secondAttribute="bottom" constant="43" id="o6I-O7-H4y"/>
+                            <constraint firstItem="rxd-3c-wfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="sDq-RS-0dn"/>
+                            <constraint firstItem="axb-Ra-qxf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="sdf-OF-oOg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="axb-Ra-qxf" id="ROe-Mg-nMJ"/>
+                        <outlet property="button2" destination="rxd-3c-wfe" id="yoO-gm-saa"/>
+                        <outlet property="button3" destination="X2y-Q6-Dql" id="AdP-Mf-4dC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="elivehome_share.png" width="84" height="84"/>
+    </resources>
+</document>
