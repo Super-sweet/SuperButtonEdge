@@ -16,14 +16,14 @@ Pod::Spec.new do |s|
 
 
   s.author             = { "Super-sweet" => "347393193@qq.com" }
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
 
   s.source       = { :git => "https://github.com/Super-sweet/SuperButtonEdge.git", :tag => "{s.version}" }
 
 
-  s.source_files  = "SuperButtonEdge.{h,m}"
-  s.framework    = "UIKit"
+  s.source_files  = "SuperButtonEdge/UIButton+ImageTitleSpacing.{h,m}"
+  s.framework    = "UIKit", "Foundation", "CoreGraphics"
   s.requires_arc = true
 
 
